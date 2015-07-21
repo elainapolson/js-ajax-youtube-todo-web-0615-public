@@ -8,7 +8,6 @@ class App < Sinatra::Base
   end
 
   get "/widget" do
-    binding.pry
     YouTube.run(params[:search_keyword])
   end
 end
